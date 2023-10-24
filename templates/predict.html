@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNN Model</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+
+<style>
+    body{
+        font-family: "Roboto Slab";
+    }
+
+    img {
+        max-height: 300px;
+        max-width: 300px;
+    }
+</style>
+
+<body>
+    
+    <div class="container-fluid">
+        <div class="col-md-12 text-center" style="padding-top: 20px;">
+            <p class="fw-bold" style="font-size: 40px;">PREDICTION</p>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row back">
+            
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4 text-center">
+                <p style="font-size: larger;">{{label}}</p>
+            </div>
+                
+    </div>
+
+    <div class="container-fluid">
+        <div class="row back">
+            <div class="col-md-4"></div>
+
+            <div class="col-lg-4 text-center">
+                <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+        <form action="/home" method="get">
+            <div class="col-md-12 text-center p-3">
+                <button type="submit" class="btn btn-danger">Try Again</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
