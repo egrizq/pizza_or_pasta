@@ -1,5 +1,3 @@
-const form = document.getElementById("form")
-const inputPicture = document.getElementById("inputPicture")
 const img = document.getElementById("img")
 
 function file_img() {
